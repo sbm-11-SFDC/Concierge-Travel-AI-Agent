@@ -110,7 +110,7 @@ User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI 
 
 ## 📁 Project Structure
 
-![alt text](<Screenshot 2025-11-27 204731-1.png>)
+![alt text](<Screenshot 2025-11-27 204731.png>)
 
 ## ⚙️ Setup & Installation
 1️⃣ Clone the repository
