@@ -111,21 +111,36 @@ User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI 
 ## 📁 Project Structure
 ai-capstone-gemini/
 │
+
 ├── agents/
+
 │   ├── travel_agent.py
+
 │   └── coordinator_agent.py
+
 │
+
 ├── tools/
+
 │   └── gemini_websearch.py
+
 │
+
 ├── web/
+
 │   ├── index.html
+
 │   ├── styles.css
+
 │   └── app.js
+
 │
 ├── .env
+
 ├── test_genai_quick.py
+
 ├── list_models_simple.py
+
 └── README.md
 
 ## ⚙️ Setup & Installation
@@ -223,6 +238,9 @@ Vanilla JS
 
 Kaggle AI Intensive Capstone
 
-## Author
-
+## 👤 Author
 Suraj Mahale
+
+AI & Salesforce Developer
+
+GitHub: https://github.com/sbm-11-SFDC
