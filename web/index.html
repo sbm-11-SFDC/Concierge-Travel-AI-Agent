@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Travel Agent Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="logo.png" alt="TripConcierge logo" class="logo" onerror="this.style.display='none'"/>
+        <h1>Travel Agent — Plan a Trip</h1>
+      </div>
+      <p class="subtitle">Ask for destination, dates, preferences and budget — click Plan Trip</p>
+    </header>
+
+    <form id="tripForm" aria-label="Trip planner form" class="trip-form">
+      <label for="query" class="sr-only">Trip request (destination, dates, prefs, budget):</label>
+      <div class="input-row">
+        <input id="query" name="query" type="text"
+               placeholder="e.g. 3-day trip to Goa, beaches, Dec, budget INR 30000"
+               required />
+        <button id="planBtn" class="btn" type="submit">Plan Trip</button>
+      </div>
+      <div class="hint">Tip: include destination, rough dates and budget</div>
+    </form>
+
+    <div id="status" aria-live="polite" class="status">Agent idle</div>
+
+    <div id="loader" class="loader hidden" aria-hidden="true">
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="loader-text">Thinking... contacting agent</div>
+    </div>
+
+    <pre id="result" class="result" aria-label="Agent result"></pre>
+
+    <footer class="footer">Built with ❤️ — Local demo</footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

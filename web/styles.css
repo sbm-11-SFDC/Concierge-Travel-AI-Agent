@@ -1,0 +1,58 @@
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --accent:#0b63d6;
+  --muted:#6b7280;
+  --radius:10px;
+  --max-width:840px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size:16px;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg);
+  color:#111;
+  margin:0;
+  padding:24px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  min-height:100vh;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  background:var(--card);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+.header{margin-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;object-fit:contain;border-radius:8px;background:#fff;padding:6px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+h1{margin:0;font-size:20px}
+.subtitle{margin:8px 0 0;color:var(--muted);font-size:0.95rem}
+
+.trip-form{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.input-row{display:flex;gap:8px;align-items:center}
+input[type='text']{flex:1;padding:10px;border:1px solid #e3e7ee;border-radius:8px;font-size:15px}
+.btn{padding:10px 14px;border:0;border-radius:8px;background:var(--accent);color:white;cursor:pointer;font-weight:600}
+.btn[disabled]{opacity:0.6;cursor:not-allowed}
+.hint{color:var(--muted);font-size:0.92rem;margin-top:6px}
+
+.status{margin-top:12px;color:var(--muted);font-size:0.95rem}
+.loader{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;background:linear-gradient(90deg,rgba(11,99,214,0.06),rgba(0,0,0,0.01));margin-top:10px}
+.hidden{display:none}
+.spinner{width:16px;height:16px;border-radius:50%;border:3px solid rgba(0,0,0,0.08);border-top-color:var(--accent);animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loader-text{font-size:0.95rem;color:var(--muted)}
+
+.result{white-space:pre-wrap;background:#fbfdff;padding:12px;border-radius:8px;border:1px dashed #e6e9ee;margin-top:12px;min-height:220px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+
+@media (max-width:560px){
+  .input-row{flex-direction:column}
+  .btn{width:100%}
+  .logo{width:40px;height:40px}
+}

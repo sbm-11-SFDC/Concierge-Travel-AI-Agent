@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Soberr\Documents\ai-capstone-gemini\list_models_long.py", line 15, in <module>
+    models = genai.list_models(timeout=60)
+TypeError: list_models() got an unexpected keyword argument 'timeout'
+Calling list_models with 60s timeout... (this may take a few seconds)
+LIST_MODELS_FAILED: list_models() got an unexpected keyword argument 'timeout'
