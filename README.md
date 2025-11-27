@@ -109,7 +109,8 @@ Citations
 User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI Output
 
 ## 📁 Project Structure
-![alt text](<Screenshot 2025-11-27 204731.png>)
+
+![alt text](<Screenshot 2025-11-27 204731-1.png>)
 
 ## ⚙️ Setup & Installation
 1️⃣ Clone the repository
@@ -184,11 +185,17 @@ Source citations
 ## 🛠️ Future Enhancements
 
 ✔ Image fetching for attractions (Unsplash API)
+
 ✔ Hotel booking links (MakeMyTrip / Booking.com affiliate)
+
 ✔ Google Maps embed for routes
+
 ✔ User profile + history
+
 ✔ PDF itinerary export
+
 ✔ Chat-like interface
+
 
 ## 🪪 License
 
