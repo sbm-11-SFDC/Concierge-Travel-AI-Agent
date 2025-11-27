@@ -109,39 +109,7 @@ Citations
 User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI Output
 
 ## 📁 Project Structure
-ai-capstone-gemini/
-│
-
-├── agents/
-
-│   ├── travel_agent.py
-
-│   └── coordinator_agent.py
-
-│
-
-├── tools/
-
-│   └── gemini_websearch.py
-
-│
-
-├── web/
-
-│   ├── index.html
-
-│   ├── styles.css
-
-│   └── app.js
-
-│
-├── .env
-
-├── test_genai_quick.py
-
-├── list_models_simple.py
-
-└── README.md
+![alt text](<Screenshot 2025-11-27 204731.png>)
 
 ## ⚙️ Setup & Installation
 1️⃣ Clone the repository
