@@ -1,5 +1,5 @@
 
-# 🌍 Concierge Travel AI Agent ![alt text](<Multi-Agent Travel Planner Agent.jpg>)
+# 🌍 Concierge Travel AI Agent
 
 An AI-powered multi-agent travel planner built with Google Gemini, FastAPI, and a clean browser UI.
 Users can request personalized trip plans (destination, dates, budget, preferences), and the system generates a complete itinerary including attractions, hotels, budget details, and citations.
