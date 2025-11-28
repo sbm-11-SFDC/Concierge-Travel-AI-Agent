@@ -2,7 +2,7 @@
 <p align="center">
   <img src="images/logo.png"
   width="800"
-  height="180"
+  height="300"
   style="object-fit: cover;
   border-radius:8px;"  
   alt="Concierge Travel AI Agent Banner"/>
