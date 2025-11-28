@@ -1,6 +1,10 @@
 
 <p align="center">
-  <img src="images/logo.png"  width="800" alt="Concierge Travel AI Agent Logo"/>
+  <img src="images/logo.png"
+  width="800"
+  height="400"
+  style="object-fit: cover;"  
+  alt="Concierge Travel AI Agent Banner"/>
 </p>
 
 # 🌍 Concierge Travel AI Agent
