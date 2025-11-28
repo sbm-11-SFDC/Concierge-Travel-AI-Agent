@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="images/logo.png" width="180" alt="Concierge Travel Logo">
+</p>
+
 # 🌍 Concierge Travel AI Agent
 
 An AI-powered multi-agent travel planner built with Google Gemini, FastAPI, and a clean browser UI.
