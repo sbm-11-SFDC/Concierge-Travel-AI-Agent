@@ -124,14 +124,19 @@ User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI 
 
 ## ⚙️ Setup & Installation
 1️⃣ Clone the repository
+
 git clone https://github.com/<your-username>/ai-capstone-gemini.git
+
 cd ai-capstone-gemini
 
 2️⃣ Create and activate virtual environment
+
 python -m venv .venv
+
 .venv\Scripts\activate  # Windows
 
 3️⃣ Install dependencies
+
 pip install -r requirements.txt
 
 4️⃣ Add your Gemini API Key
@@ -139,13 +144,26 @@ pip install -r requirements.txt
 Create .env in project root:
 
 GEMINI_API_KEY=YOUR_API_KEY_HERE
+
+COORD_PORT=8000
+
+TRAVEL_PORT=8005
+
+MCP_PORT=8001
+
 GENAI_MODEL=models/gemini-2.5-pro
-GENAI_TIMEOUT_SEC=60
+
+GENAI_TIMEOUT_SEC=120
+
 GENAI_RETRIES=1
 
+
 🚀 Running the Project
+
 1️⃣ Start Travel Agent (Port 8005)
+
 .venv\Scripts\activate
+
 python -m agents.travel_agent
 
 2️⃣ Start Coordinator Agent (Port 8000)
@@ -153,26 +171,46 @@ python -m agents.travel_agent
 (optional)
 
 .venv\Scripts\activate
+
 python -m agents.coordinator_agent
 
 3️⃣ Start Web UI
+
 cd web
+
 python -m http.server 8080
 
 4️⃣ Open browser
+
 http://localhost:8080
 
+
 🧪 Testing the System
+
 Test Travel Agent directly
+
 $body = @{
+
   task_id = "T-test"
+
   payload = @{ query = "Plan a 2 day trip to Nashik from Pune in December, budget 20000 INR" }
+
 } | ConvertTo-Json
 
-Invoke-RestMethod -Method Post -Uri "http://localhost:8005/agent/task" -Body $body -ContentType "application/json"
+Invoke-RestMethod -Method Post `
+
+  -Uri "http://localhost:8005/agent/task" `
+
+  -Body $body `
+
+  -ContentType "application/json"
 
 Test Coordinator Agent
-Invoke-RestMethod -Method Post -Uri "http://localhost:8000/start_convo"
+
+Invoke-RestMethod -Method Post ` 
+
+-Uri "http://localhost:8000/start_convo" `
+
 
 ## 📱 Example Prompt (UI)
 Plan a 3-day trip to Goa from Mumbai in December, budget 30,000 INR.
@@ -207,21 +245,9 @@ Source citations
 ✔ Chat-like interface
 
 
-## 🪪 License
-
-MIT License 
-
-## 💙 Credits
-
-Built with ❤️ using:
-
-Google Gemini
-
-FastAPI
-
-Vanilla JS
-
-Kaggle AI Intensive Capstone
+## 📄 License
+This project is licensed under the MIT License.
+See the [LICENSE] file for details
 
 ## 👤 Author
 Suraj Mahale
