@@ -69,16 +69,16 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
     Handle timeouts, errors, and agent responses
 
 ## 🧱 Project Architecture Overview
-# 1. User → Web UI
+ 1️⃣ User → Web UI
 
     User enters a query like:
     “Plan a 3-day trip to Goa from Mumbai, budget 30,000 INR.”
 
-# 2. Web UI → Travel Agent API
+ 2️⃣ Web UI → Travel Agent API
 
     app.js sends a POST request to http://localhost:8005/agent/task.
 
-# 3. Travel Agent (Core Engine)
+ 3️⃣ Travel Agent (Core Engine)
 
     The Travel Agent processes the user’s trip request, extracts destination, dates, preferences, and
 
@@ -88,7 +88,7 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
 
     plans, budget details, and citations.
     
-# 4. (Optional) Coordinator Agent
+ 4️⃣ (Optional) Coordinator Agent
 
     The Coordinator Agent manages multi-turn conversations by tracking the session and clarifying
 
@@ -96,7 +96,7 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
 
     generate the final plan. This ensures smoother, more natural travel planning interactions.
 
-# 5. Response → UI
+ 5️⃣ Response → UI
 
     After processing, the Travel Agent returns a structured travel plan to the UI, including itinerary,
 
