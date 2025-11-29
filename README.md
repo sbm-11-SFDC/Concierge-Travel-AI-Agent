@@ -71,52 +71,52 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
 ## 🧱 Project Architecture Overview
 1. User → Web UI
 
-  User enters a query like:
-  “Plan a 3-day trip to Goa from Mumbai, budget 30,000 INR.”
+    User enters a query like:
+    “Plan a 3-day trip to Goa from Mumbai, budget 30,000 INR.”
 
 2. Web UI → Travel Agent API
 
-  app.js sends a POST request to http://localhost:8005/agent/task.
+    app.js sends a POST request to http://localhost:8005/agent/task.
 
 3. Travel Agent
 
-  Processes query
+    Processes query
 
-  Calls Gemini for:
+    Calls Gemini for:
 
-  Location summaries
+    Location summaries
 
-  Attraction suggestions
+    Attraction suggestions
 
-  Hotel recommendations
+    Hotel recommendations
 
-  Budget estimation
+    Budget estimation
 
-  Structures response
+    Structures response
 
 4. (Optional) Coordinator Agent
 
-  Manages session
+    Manages session
 
-  Handles follow-up queries
+    Handles follow-up queries
 
-  Decides when to invoke travel agent tool
+    Decides when to invoke travel agent tool
 
 5. Response → UI
 
-  Returned with:
+    Returned with:
 
-  Itinerary
+    Itinerary
 
-  Budget
+    Budget
 
-  Places to visit
+    Places to visit
 
-  Hotels
+    Hotels
 
-Citations
+  Citations
 
-User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI Output
+  User → Web UI → Travel Agent → Gemini Search Tool → Travel Agent → UI Output
 
 ## 📁 Project Structure
 
@@ -189,27 +189,27 @@ http://localhost:8080
 
 Test Travel Agent directly
 
-$body = @{
+  $body = @{
 
-  task_id = "T-test"
+    task_id = "T-test"
 
-  payload = @{ query = "Plan a 2 day trip to Nashik from Pune in December, budget 20000 INR" }
+    payload = @{ query = "Plan a 2 day trip to Nashik from Pune in December, budget 20000 INR" }
 
 } | ConvertTo-Json
 
-Invoke-RestMethod -Method Post `
+  Invoke-RestMethod -Method Post `
 
-  -Uri "http://localhost:8005/agent/task" `
+   -Uri "http://localhost:8005/agent/task" `
 
-  -Body $body `
+    -Body $body `
 
-  -ContentType "application/json"
+    -ContentType "application/json"
 
 Test Coordinator Agent
 
-Invoke-RestMethod -Method Post ` 
+    Invoke-RestMethod -Method Post ` 
 
--Uri "http://localhost:8000/start_convo" `
+    -Uri "http://localhost:8000/start_convo" `
 
 
 ## 📱 Example Prompt (UI)
@@ -218,17 +218,17 @@ Plan a 3-day trip to Goa from Mumbai in December, budget 30,000 INR.
 
 ✔ You will receive:
 
-  Day-wise itinerary
+    Day-wise itinerary
 
-  Travel options
+    Travel options
 
-  Hotels
+    Hotels
 
-  Attractions
+    Attractions
 
-  Budget calculation
+    Budget calculation
 
-  Source citations
+    Source citations
 
 ## 🛠️ Future Enhancements
 
