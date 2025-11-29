@@ -113,64 +113,64 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
 ## ⚙️ Setup & Installation
 1️⃣ Clone the repository
 
-git clone https://github.com/<your-username>/ai-capstone-gemini.git
+    git clone https://github.com/<your-username>/ai-capstone-gemini.git
 
-cd ai-capstone-gemini
+    cd ai-capstone-gemini
 
 2️⃣ Create and activate virtual environment
 
-python -m venv .venv
+    python -m venv .venv
 
-.venv\Scripts\activate  # Windows
+    .venv\Scripts\activate  # Windows
 
 3️⃣ Install dependencies
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4️⃣ Add your Gemini API Key
 
-Create .env in project root:
+    Create .env in project root:
 
-GEMINI_API_KEY=YOUR_API_KEY_HERE
+    GEMINI_API_KEY=YOUR_API_KEY_HERE
 
-COORD_PORT=8000
+    COORD_PORT=8000
 
-TRAVEL_PORT=8005
+    TRAVEL_PORT=8005
 
-MCP_PORT=8001
+    MCP_PORT=8001
 
-GENAI_MODEL=models/gemini-2.5-pro
+    GENAI_MODEL=models/gemini-2.5-pro
 
-GENAI_TIMEOUT_SEC=120
+    GENAI_TIMEOUT_SEC=120
 
-GENAI_RETRIES=1
+    GENAI_RETRIES=1
 
 
 ## 🚀 Running the Project 
 
 1️⃣ Start Travel Agent (Port 8005)
 
-.venv\Scripts\activate
+    .venv\Scripts\activate
 
-python -m agents.travel_agent
+    python -m agents.travel_agent
 
 2️⃣ Start Coordinator Agent (Port 8000)
 
 (optional)
 
-.venv\Scripts\activate
+    .venv\Scripts\activate
 
-python -m agents.coordinator_agent
+    python -m agents.coordinator_agent
 
 3️⃣ Start Web UI
 
-cd web
+    cd web
 
-python -m http.server 8080
+    python -m http.server 8080
 
 4️⃣ Open browser
 
-http://localhost:8080
+    http://localhost:8080
 
 
 🧪 Testing the System
