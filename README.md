@@ -158,7 +158,7 @@ GENAI_TIMEOUT_SEC=120
 GENAI_RETRIES=1
 
 
-🚀 Running the Project
+## 🚀 Running the Project 
 
 1️⃣ Start Travel Agent (Port 8005)
 
