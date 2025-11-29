@@ -30,89 +30,89 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
 ## ✨ Key Features
 🔹 Multi-Agent System
 
-Coordinator Agent → Handles conversation sessions, intent tracking, routing.
+    Coordinator Agent → Handles conversation sessions, intent tracking, routing.
 
-Travel Agent → Generates structured trip plans, budgets, attractions, hotels, and source citations.
+    Travel Agent → Generates structured trip plans, budgets, attractions, hotels, and source citations.
 
 🔹 Custom Tools
 
-gemini_websearch.py performs search-like summarization using Gemini API (no external APIs).
+    gemini_websearch.py performs search-like summarization using Gemini API (no external APIs).
 
 🔹 End-to-End Full Stack App
 
-Backend: FastAPI + Uvicorn
+    Backend: FastAPI + Uvicorn
 
-Frontend: HTML + CSS + JavaScript
+    Frontend: HTML + CSS + JavaScript
 
-LLM: Google Gemini (2.5 Pro / Flash)
+    LLM: Google Gemini (2.5 Pro / Flash)
 
 🔹 Real-Time Travel Planning
 
-Itinerary generation
+    Itinerary generation
 
-Budget breakdown
+    Budget breakdown
 
-Hotel suggestions
+    Hotel suggestions
 
-Attraction list
+    Attraction list
 
-Sources (Holidify, Tripoto, MakeMyTrip, Thrillophilia, etc.)
+    Sources (Holidify, Tripoto, MakeMyTrip, Thrillophilia, etc.)
 
 🔹 Local Web UI
 
-A clean, lightweight interface:
+    A clean, lightweight interface:
 
-Submit a travel query
+    Submit a travel query
 
-Receive structured result
+    Receive structured result
 
-Handle timeouts, errors, and agent responses
+    Handle timeouts, errors, and agent responses
 
 ## 🧱 Project Architecture Overview
 1. User → Web UI
 
-User enters a query like:
-“Plan a 3-day trip to Goa from Mumbai, budget 30,000 INR.”
+  User enters a query like:
+  “Plan a 3-day trip to Goa from Mumbai, budget 30,000 INR.”
 
 2. Web UI → Travel Agent API
 
-app.js sends a POST request to http://localhost:8005/agent/task.
+  app.js sends a POST request to http://localhost:8005/agent/task.
 
 3. Travel Agent
 
-Processes query
+  Processes query
 
-Calls Gemini for:
+  Calls Gemini for:
 
-Location summaries
+  Location summaries
 
-Attraction suggestions
+  Attraction suggestions
 
-Hotel recommendations
+  Hotel recommendations
 
-Budget estimation
+  Budget estimation
 
-Structures response
+  Structures response
 
 4. (Optional) Coordinator Agent
 
-Manages session
+  Manages session
 
-Handles follow-up queries
+  Handles follow-up queries
 
-Decides when to invoke travel agent tool
+  Decides when to invoke travel agent tool
 
 5. Response → UI
 
-Returned with:
+  Returned with:
 
-Itinerary
+  Itinerary
 
-Budget
+  Budget
 
-Places to visit
+  Places to visit
 
-Hotels
+  Hotels
 
 Citations
 
@@ -218,17 +218,17 @@ Plan a 3-day trip to Goa from Mumbai in December, budget 30,000 INR.
 
 ✔ You will receive:
 
-Day-wise itinerary
+  Day-wise itinerary
 
-Travel options
+  Travel options
 
-Hotels
+  Hotels
 
-Attractions
+  Attractions
 
-Budget calculation
+  Budget calculation
 
-Source citations
+  Source citations
 
 ## 🛠️ Future Enhancements
 
