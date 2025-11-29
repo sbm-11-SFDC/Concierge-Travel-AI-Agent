@@ -189,13 +189,13 @@ http://localhost:8080
 
 Test Travel Agent directly
 
-   $body = @{
+    $body = @{
 
      task_id = "T-test"
 
      payload = @{ query = "Plan a 2 day trip to Nashik from Pune in December, budget 20000 INR" }
 
- } | ConvertTo-Json
+    } | ConvertTo-Json
 
      Invoke-RestMethod -Method Post `
 
@@ -247,6 +247,7 @@ Plan a 3-day trip to Goa from Mumbai in December, budget 30,000 INR.
 
 ## 📄 License
 This project is licensed under the MIT License.
+
 See the [LICENSE] file for details
 
 ## 👤 Author
