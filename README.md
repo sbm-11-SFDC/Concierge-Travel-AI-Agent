@@ -79,6 +79,7 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
     app.js sends a POST request to http://localhost:8005/agent/task.
 
 3. Travel Agent (Core Engine)
+
     The Travel Agent processes the user’s trip request, extracts destination, dates, preferences, and
 
     budget, and sends a structured query to Gemini. It gathers location insights, attractions, and hotel
@@ -88,6 +89,7 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
     plans, budget details, and citations.
 
 4. (Optional) Coordinator Agent
+
     The Coordinator Agent manages multi-turn conversations by tracking the session and clarifying
 
     incomplete user inputs. It decides when refinement is needed and when the Travel Agent should
@@ -95,6 +97,7 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
     generate the final plan. This ensures smoother, more natural travel planning interactions.
 
 5. Response → UI
+
     After processing, the Travel Agent returns a structured travel plan to the UI, including itinerary,
 
     hotels, places to visit, and budget. The browser displays this result in a user-friendly format so
