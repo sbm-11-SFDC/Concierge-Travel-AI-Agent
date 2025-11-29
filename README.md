@@ -189,27 +189,27 @@ http://localhost:8080
 
 Test Travel Agent directly
 
-  $body = @{
+   $body = @{
 
-    task_id = "T-test"
+     task_id = "T-test"
 
-    payload = @{ query = "Plan a 2 day trip to Nashik from Pune in December, budget 20000 INR" }
+     payload = @{ query = "Plan a 2 day trip to Nashik from Pune in December, budget 20000 INR" }
 
-} | ConvertTo-Json
+ } | ConvertTo-Json
 
-  Invoke-RestMethod -Method Post `
+     Invoke-RestMethod -Method Post `
 
-   -Uri "http://localhost:8005/agent/task" `
+     -Uri "http://localhost:8005/agent/task" `
 
-    -Body $body `
+     -Body $body `
 
-    -ContentType "application/json"
+     -ContentType "application/json"
 
 Test Coordinator Agent
 
-    Invoke-RestMethod -Method Post ` 
+     Invoke-RestMethod -Method Post ` 
 
-    -Uri "http://localhost:8000/start_convo" `
+     -Uri "http://localhost:8000/start_convo" `
 
 
 ## 📱 Example Prompt (UI)
