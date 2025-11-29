@@ -87,7 +87,7 @@ The project was developed as a submission to the Kaggle Agents Intensive Capston
     suggestions, then formats everything into a complete itinerary. The final response includes day-wise
 
     plans, budget details, and citations.
-
+    
 4. (Optional) Coordinator Agent
 
     The Coordinator Agent manages multi-turn conversations by tracking the session and clarifying
